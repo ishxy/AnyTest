@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.shxy.netty.test;
+
+message MyMessage {
+    string myString = 1;
+    int32 myInt = 2;
+    bytes myBytes = 3;
+}

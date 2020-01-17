@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "com.shxy.grpc";
+option java_outer_classname = "HelloWorldProto";
+option java_generic_services = true;
+// 可以生成rpc接口
+
+package helloworld;
+service GreetHelloWorld {
+    rpc SayHello (HelloWorldRequest) returns (HelloWorldResponse);
+}
+
+message HelloWorldRequest {
+    string name = 1;
+}
+
+
+message HelloWorldResponse {
+    string message = 1;
+}

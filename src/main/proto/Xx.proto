@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.shxy.Netty.test;
+
+service MyService {
+    rpc getInfo (Request) returns (Response) {
+    }
+}
+
+message Request {
+    string name = 1;
+    int32 age = 2;
+}
+
+message Response {
+    string msg = 1;
+    int32 state = 2;
+}

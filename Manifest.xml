@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <activity name="androidtest.activity.MainActivity">
+        <action name="MAIN"/>
+    </activity>
+</manifest>
